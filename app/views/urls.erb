@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Shorten your link, <%= @user.username %></h1>
+
+
+  <form action="/urls" method="post">
+    <input type="text" name="url[long_url]">
+    <input type="submit" value="Shorten">
+  </form>
+
+<!--   <div>
+    <% @urls.each do |url| %>
+      <a href="/<%= url.short_url %>"><p><%= url.short_url %></p></a>
+      <p>Click count: <%= url.click_count %> </p>
+    <% end %>
+  </div> -->
+</div>
